@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'hola_ruslan'
+require 'optparse'
+
+def main
+  language = "english"
+
+  optparse = OptionParser.new do |opts|
+    opts.banner = "Usage: hola [options]"
+    opts.separator ""
+    opts.separator "Options:"
+    opts.on("-l", "--language LANGUAGE", ["spanish", "english"], "Select language (default 'english')") do |lan|
+       language = lan
+    end
+    opts.on("-h", "--help", "This message") do |what|
+      puts opts
+      exit
+    end
+  end
+
+  optparse.parse!
+  puts Hola.hi(language)
+end
+
+main
