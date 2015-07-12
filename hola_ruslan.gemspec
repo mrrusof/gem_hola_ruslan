@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Helo world by Ruslan."
   spec.description   = "A simple hello world for learning gem creation."
-  spec.homepage      = "https://github.com/mrrusof"
+  spec.homepage      = "https://github.com/mrrusof/gem_hola_ruslan"
   spec.license       = "GNU GPL 2"
 
   # # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
